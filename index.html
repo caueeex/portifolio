@@ -1,969 +1,1093 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cauê Sotero | Full Stack Developer</title>
-  <meta name="description" content="Portfolio of Cauê Sotero, a Full Stack Developer passionate about technology, innovation, and teamwork.">
-  <meta name="keywords" content="Cauê Sotero, Full Stack Developer, React, Node.js, PHP, Laravel, AWS">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png">
-  
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/v0.css">
-  
-  <!-- Libraries CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-</head>
-<style>
-    section, .container, , .about-content, .skills-grid, .projects-container, .contact-grid, .education-grid, .certifications-container, .testimonials-container, .achievements-grid {
-      display: block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-      min-height: 100px;
-    }
-    [data-aos] {
-      opacity: 1 !important;
-      transform: none !important;
-    }
-  </style>
-<body>
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar">
-    <div class="container">
-      <a href="#" class="logo">CS</a>
-      
-      <!-- Desktop Navigation -->
-      <div class="nav-links">
-        <a href="#hero" class="nav-link">Início</a>
-        <a href="#about" class="nav-link">Sobre</a>
-        <a href="#skills" class="nav-link">Habilidades</a>
-        <a href="#projects" class="nav-link">Projetos</a>
-        <a href="#contact" class="nav-link">Contato</a>
-        
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-        
-        <a href="CurrÍculo - Cauê.pdf" download class="btn btn-primary">Download CV</a>
-      </div>
-      
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda o que é uma landing page, descubra as vantagens do Bootstrap e compare com desenvolvimento em código puro">
+    <title>Landing Pages com Bootstrap | Guia Educacional</title>
     
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="mobile-menu">
-      <div class="container">
-        <a href="#hero" class="nav-link">Início</a>
-        <a href="#about" class="nav-link">Sobre</a>
-        <a href="#skills" class="nav-link">Habilidades</a>
-        <a href="#projects" class="nav-link">Projetos</a>
-        <a href="#contact" class="nav-link">Contato</a>
-        <a href="CurrÍculo - Cauê.pdf" download class="btn btn-primary mobile-btn">Download CV</a>
-      </div>
-    </div>
-  </nav>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+            --text-color: #334155;
+            --text-light: #64748b;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 6rem 0;
+        }
+        
+        .section-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            color: var(--dark-color);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .code-comparison {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .code-header {
+            padding: 0.75rem 1rem;
+            background-color: #e9ecef;
+            border-bottom: 1px solid #dee2e6;
+            font-weight: 600;
+        }
+        
+        .code-content {
+            padding: 1rem;
+            overflow-x: auto;
+            background-color: white;
+        }
+        
+        pre {
+            margin: 0;
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.875rem;
+        }
+        
+        .comparison-result {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-top: 1rem;
+        }
+        
+        .quiz-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .quiz-option {
+            margin-bottom: 0.75rem;
+        }
+        
+        .landing-features {
+            background-color: #f8fafc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div id="particles-js" class="particles"></div>
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">Cauê Sotero</h1>
-        <h2 class="hero-subtitle">
-            <span id="typed-text"></span>
-          </h2>
-        <p class="hero-description">
-          Transformando ideias em soluções inovadoras com paixão por tecnologia e trabalho em equipe
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-          <a href="CurrÍculo - Cauê.pdf" download class="btn btn-outline">Download CV</a>
-        </div>
-      </div>
-      <div class="scroll-down">
-        <a href="#about">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about section-padding section-bg">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
-      
-      <div class="about-content">
-        <div class="about-image" data-aos="fade-right">
-          <div class="card">
-            <img src="./assets/image/caue-foto.jpeg" alt="Cauê Sotero" class="img-fluid">
-          </div>
-        </div>
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
         
-        <div class="about-text" data-aos="fade-left">
-          <div class="location">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            <span>Taubaté, São Paulo, Brasil</span>
-          </div>
-          
-          <p>
-            Apaixonado por tecnologia, aprendizado contínuo e colaboração. Acredito que grandes resultados surgem do
-            trabalho em equipe e da troca de conhecimentos. Sou prestativo, focado e comprometido, sempre buscando
-            evoluir e entregar soluções inovadoras em cada projeto.
-          </p>
-          
-          <div class="stats-grid">
-            <div class="stat-card">
-              <h3>2+</h3>
-              <p>Anos de Experiência</p>
-            </div>
-            
-            <div class="stat-card">
-              <h3>10+</h3>
-              <p>Projetos Concluídos</p>
-            </div>
-            
-            <div class="stat-card">
-              <h3>3+</h3>
-              <p>Certificações</p>
-            </div>
-            
-            <div class="stat-card">
-              <h3>5+</h3>
-              <p>Tecnologias Dominadas</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills section-padding">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
-      
-      <div class="skills-grid">
-        <!-- Linguagens -->
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
-          <div class="skill-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon blue">
-              <polyline points="16 18 22 12 16 6"></polyline>
-              <polyline points="8 6 2 12 8 18"></polyline>
-            </svg>
-            <h3>Linguagens</h3>
-          </div>
-          
-          <div class="skill-items">
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>PHP</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Python</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Java</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>JavaScript</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>TypeScript</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>C++</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>HTML</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>CSS</span>
-            </div>
-          </div>
-        </div>
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+        }
         
-        <!-- Frameworks e Bibliotecas -->
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-          <div class="skill-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon purple">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
-            <h3>Frameworks e Bibliotecas</h3>
-          </div>
-          
-          <div class="skill-items">
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>React</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>React Native</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Node.js</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Express</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Laravel</span>
-            </div>
-          </div>
-        </div>
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            border: 3px solid white;
+            z-index: 1;
+        }
         
-        <!-- Banco de Dados -->
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-          <div class="skill-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon green">
-              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-            </svg>
-            <h3>Banco de Dados</h3>
-          </div>
-          
-          <div class="skill-items">
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon green">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>MySQL</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon green">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>PostgreSQL</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon green">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>MongoDB</span>
-            </div>
-          </div>
-        </div>
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: -1.1rem;
+            top: 12px;
+            bottom: 0;
+            width: 2px;
+            background-color: #e9ecef;
+        }
         
-        <!-- Infraestrutura -->
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-          <div class="skill-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon orange">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-              <line x1="6" y1="6" x2="6.01" y2="6"></line>
-              <line x1="6" y1="18" x2="6.01" y2="18"></line>
-            </svg>
-            <h3>Infraestrutura</h3>
-          </div>
-          
-          <div class="skill-items">
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon orange">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>AWS</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon orange">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Docker</span>
-            </div>
-          </div>
-        </div>
+        .timeline-item:last-child:after {
+            display: none;
+        }
         
-        <!-- Ferramentas -->
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
-          <div class="skill-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon red">
-              <polyline points="4 17 10 11 4 5"></polyline>
-              <line x1="12" y1="19" x2="20" y2="19"></line>
-            </svg>
-            <h3>Ferramentas</h3>
-          </div>
-          
-          <div class="skill-items">
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon red">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Git</span>
-            </div>
-            
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon red">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>GitHub</span>
-            </div>
-          </div>
-        </div>
+        .timeline-date {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
         
-        <!-- Metodologias -->
-        <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
-          <div class="skill-header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon indigo">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="8 12 12 16 16 12"></polyline>
-              <line x1="12" y1="8" x2="12" y2="16"></line>
-            </svg>
-            <h3>Metodologias</h3>
-          </div>
-          
-          <div class="skill-items">
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon indigo">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>MVC</span>
-            </div>
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 4rem 0;
+                text-align: center;
+            }
             
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon indigo">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Clean Code</span>
-            </div>
+            .section-title {
+                font-size: 2rem;
+                text-align: center;
+            }
             
-            <div class="skill-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon indigo">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
-              </svg>
-              <span>Scrum</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Achievements Section -->
-  <section id="achievements" class="achievements section-padding section-bg">
-    <div class="container">
-      <div class="section-header" data-aos="fade-up">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon yellow">
-          <circle cx="12" cy="8" r="7"></circle>
-          <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-        </svg>
-        <h2 class="section-title">Conquistas</h2>
-      </div>
-      
-      <div class="achievements-grid">
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
-          <div class="achievement-icon">🥇</div>
-          <h3>Top 16 SENAI Projects</h3>
-          <p>Selecionado como um dos 16 melhores projetos do SENAI em 2024</p>
-        </div>
-        
-        <div class="achievement-card" data-aos="fade-up" data-aos-delay="150">
-          <div class="achievement-icon">🥉</div>
-          <h3>Finalista em Eventos</h3>
-          <p>Finalista em duas edições em eventos como Dev Experience e Senai para o Mundo</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects section-padding">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Projetos</h2>
-      
-      <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card" id="project-1">
-          <div class="project-grid">
-            <div class="project-image">
-              <img src="./assets/image/chatbot2.jpeg" alt="Chatbot para Atendimento SENAI" class="img-fluid">
-              <img src="./assets/image/chatbot.jpeg" alt="Chatbot para Atendimento SENAI" class="img-fluid">
-            </div>
-            
-            <div class="project-content">
-              <h3 class="project-title">Chatbot para Atendimento SENAI</h3>
-              <p class="project-description">
-                Sistema de atendimento automatizado via WhatsApp para otimizar a comunicação com clientes de forma prática e eficiente.
-              </p>
-              
-              <div class="project-details">
-                <div class="project-technologies">
-                  <h4>Tecnologias:</h4>
-                  <div class="badge-container">
-                    <span class="badge">Node.js</span>
-                    <span class="badge">Express</span>
-                    <span class="badge">Socket.IO</span>
-                    <span class="badge">PHP</span>
-                    <span class="badge">MySQL</span>
-                  </div>
-                </div>
-                
-                <div class="project-features">
-                  <h4>Funcionalidades:</h4>
-                  <ul>
-                    <li>Bot no WhatsApp: Respostas automáticas sobre serviços, suporte e documentos</li>
-                    <li>Atendimento humanizado: Transição para equipe humana quando necessário</li>
-                    <li>Painel administrativo em PHP + MySQL para gerenciar atendimentos</li>
-                    <li>Mensagens rápidas pré-definidas</li>
-                  </ul>
-                </div>
-                
-                <div class="project-impact">
-                  <h4>Impacto:</h4>
-                  <ul>
-                    <li>Atendimento mais rápido e eficiente</li>
-                    <li>Melhor experiência para usuários e equipe</li>
-                    <li>Automação sem perder o toque humano</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="project-links">
-                <a href="https://github.com/caueeex/ChatBot---Senai" class="btn btn-outline btn-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Project 2 -->
-        <div class="project-card" id="project-2">
-          <div class="project-grid">
-            <div class="project-image">
-              <img src="./assets/image/vann.jpeg" alt="Projeto Vann" class="img-fluid">
-              <img src="./assets/image/vann2.jpeg" alt="Projeto Vann" class="img-fluid">
-            </div>
-            
-            <div class="project-content">
-              <h3 class="project-title">Projeto Vann</h3>
-              <p class="project-description">
-                Sistema para monitorar vans escolares em tempo real, proporcionando maior controle para condutores e tranquilidade aos pais.
-              </p>
-              
-              <div class="project-details">
-                <div class="project-technologies">
-                  <h4>Tecnologias:</h4>
-                  <div class="badge-container">
-                    <span class="badge">PHP</span>
-                    <span class="badge">Laravel</span>
-                    <span class="badge">React Native</span>
-                    <span class="badge">React</span>
-                    <span class="badge">Python</span>
-                    <span class="badge">SQL</span>
-                  </div>
-                </div>
-                
-                <div class="project-features">
-                  <h4>Funcionalidades:</h4>
-                  <ul>
-                    <li>Monitoramento em tempo real de vans escolares</li>
-                    <li>Interface para pais e condutores</li>
-                    <li>Sistema de notificações</li>
-                    <li>Relatórios detalhados</li>
-                  </ul>
-                </div>
-                
-                <div class="project-impact">
-                  <h4>Impacto:</h4>
-                  <ul>
-                    <li>Selecionado entre os 16 melhores projetos do SENAI em 2024</li>
-                    <li>Maior segurança para estudantes</li>
-                    <li>Tranquilidade para os pais</li>
-                  </ul>
-                </div>
-              </div>
-              
-              <div class="project-links">
-                <a href="https://github.com/caueeex/Sistema-Vann" class="btn btn-outline btn-sm">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education Section -->
-  <section id="education" class="education section-padding section-bg">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Formação e Experiência</h2>
-      
-      <div class="education-grid">
-        <div class="education-column" data-aos="fade-right">
-          <h3 class="column-title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="column-icon blue">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-            </svg>
-            Formação Acadêmica
-          </h3>
-          
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-              </div>
-              <div class="timeline-content">
-                <h4>Técnico em Desenvolvimento de Sistemas</h4>
-                <p class="timeline-institution">SENAI</p>
-                <p class="timeline-period">2022 - 2024</p>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue">
-                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-                </svg>
-              </div>
-              <div class="timeline-content">
-                <h4>Análise e Desenvolvimento de Sistemas</h4>
-                <p class="timeline-institution">SENAI</p>
-                <p class="timeline-period">2025 - 2026 (Previsto)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="experience-column" data-aos="fade-left">
-          <h3 class="column-title">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="column-icon purple">
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-            </svg>
-            Experiência Profissional
-          </h3>
-          
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="purple">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-              </div>
-              <div class="timeline-content">
-                <h4>Estagiário em Análise e Desenvolvimento de Sistemas</h4>
-                <p class="timeline-institution">SENAI</p>
-                <p class="timeline-period">2023 - Presente</p>
-                <p class="timeline-description">
-                  Desenvolvimento de soluções tecnológicas, participação em projetos inovadores e aplicação de metodologias ágeis.
-                </p>
-              </div>
-            </div>
-            
-            <div class="timeline-item">
-              <div class="timeline-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="purple">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                </svg>
-              </div>
-              <div class="timeline-content">
-                <h4>Líder de Equipe em Projetos</h4>
-                <p class="timeline-institution">SENAI</p>
-                <p class="timeline-period">2023 - 2024</p>
-                <p class="timeline-description">
-                  Liderança de equipes em projetos complexos, aplicando metodologias ágeis e garantindo entregas de qualidade.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications" class="certifications section-padding">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Certificações</h2>
-      
-      <div class="certifications-container">
-        <div class="certification-card" data-aos="fade-up">
-          <div class="certification-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="yellow">
-              <circle cx="12" cy="8" r="7"></circle>
-              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-            </svg>
-          </div>
-          
-          <div class="certification-content">
-            <h3>AWS Academy Graduate</h3>
-            <p class="certification-issuer">AWS Academy Cloud Foundations</p>
-            <p class="certification-date">2023</p>
-          </div>
-          
-          <a href="https://www.credly.com/badges/fc19ef4f-4d1f-4c62-a924-f014e4877d27/linked_in_profile" class="btn btn-outline btn-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-            Ver Certificado
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials section-padding section-bg">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Depoimentos</h2>
-      
-      <div class="testimonials-container" data-aos="fade-up">
-        <div class="testimonial-card" id="testimonial-slider">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="testimonial-quote blue">
-            <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
-            <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
-          </svg>
-          
-          <div class="testimonial-content">
-            <div class="testimonial-slides">
-              <div class="testimonial-slide active">
-                <p class="testimonial-text">"Recomendo fortemente o Cauê Sotero para equipes que buscam um profissional dedicado, com excelente comunicação e comprometimento na entrega de soluções de qualidade."</p>
-                <div class="testimonial-author">
-                  <h4>Professor Wilber</h4>
-                  <p>Professor SENAI</p>
-                </div>
-              </div>
-              
-              <div class="testimonial-slide">
-                <p class="testimonial-text">"Cauê sempre se destacou pelo trabalho em equipe e pela capacidade de inovar. Foi um ótimo aluno e colaborador, sempre buscando aprender e aplicar novos conhecimentos."</p>
-                <div class="testimonial-author">
-                  <h4>Professor Luís Felipe Cardoso</h4>
-                  <p>Professor SENAI</p>
-                </div>
-              </div>
-              
-              <div class="testimonial-slide">
-                <p class="testimonial-text">"Tive o prazer de orientar Cauê durante o curso Técnico em Desenvolvimento de Sistemas. Sua proatividade, envolvimento e busca por inovação o destacam como um profissional excepcional."</p>
-                <div class="testimonial-author">
-                  <h4>Professor Reuel Adimar Lopes</h4>
-                  <p>Professor SENAI</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="testimonial-controls">
-            <button class="testimonial-prev">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 18 9 12 15 6"></polyline>
-              </svg>
+            .section-title:after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-layout-text-window-reverse me-2"></i>LandingPro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="testimonial-dots">
-              <button class="testimonial-dot active" data-index="0"></button>
-              <button class="testimonial-dot" data-index="1"></button>
-              <button class="testimonial-dot" data-index="2"></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#landing-page">Landing Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bootstrap">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comparison">Comparação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best-practices">Boas Práticas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quiz">Quiz</a>
+                    </li>
+                </ul>
             </div>
-            
-            <button class="testimonial-next">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-              </svg>
-            </button>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section-padding">
-    <div class="container">
-      <h2 class="section-title" data-aos="fade-up">Contato</h2>
-      
-      <div class="contact-grid">
-        <div class="contact-info" data-aos="fade-right">
-          <div class="card">
-            <h3 class="card-title">Informações de Contato</h3>
-            
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <div>
-                <h4>Email</h4>
-                <p>devcauesotero@gmail.com</p>
-              </div>
-            </div>
-            
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <div>
-                <h4>Telefone</h4>
-                <p>(12) 99199-2477</p>
-              </div>
-            </div>
-            
-            <div class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
-                  stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <div>
-                <h4>Localização</h4>
-                <p>Taubaté, São Paulo, Brasil</p>
-              </div>
-            </div>
-            
-            <div class="social-links">
-              <h4>Redes Sociais</h4>
-              <div class="social-buttons">
-                <a href="https://github.com/caueeex" target="_blank" rel="noopener noreferrer" class="social-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/devsotero/" target="_blank" rel="noopener noreferrer" class="social-btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="contact-form" data-aos="fade-left">
-          <div class="card">
-            <h3 class="card-title">Envie uma Mensagem</h3>
-            
-            <form id="contact-form">
-              <div class="form-grid">
-                <div class="form-group">
-                  <label for="name">Nome</label>
-                  <input type="text" id="name" name="name" placeholder="Seu nome" required>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Dominando Landing Pages com Bootstrap</h1>
+                    <p class="lead mb-5">Aprenda os conceitos fundamentais, boas práticas e as vantagens de usar Bootstrap no desenvolvimento de páginas de conversão</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que é Landing Page -->
+    <section id="landing-page" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">O que é uma Landing Page?</h2>
+                    
+                    <div class="landing-features">
+                        <p class="lead">Uma <strong>landing page</strong> (página de aterrissagem) é uma página web independente, criada especificamente para uma campanha de marketing ou publicidade, com o objetivo principal de converter visitantes em leads ou clientes.</p>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">Características principais:</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <i class="bi bi-bullseye feature-icon me-3"></i>
+                                <div>
+                                    <h4>Foco em conversão</h4>
+                                    <p>Todos os elementos são projetados para guiar o visitante em direção a uma ação específica (comprar, assinar, baixar).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <i class="bi bi-layout-wtf feature-icon me-3"></i>
+                                <div>
+                                    <h4>Design minimalista</h4>
+                                    <p>Sem menus complexos ou distrações, apenas o conteúdo essencial para a conversão.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <i class="bi bi-phone feature-icon me-3"></i>
+                                <div>
+                                    <h4>Totalmente responsiva</h4>
+                                    <p>Funciona perfeitamente em qualquer dispositivo, desde smartphones até desktops.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="d-flex">
+                                <i class="bi bi-megaphone feature-icon me-3"></i>
+                                <div>
+                                    <h4>Alinhada à campanha</h4>
+                                    <p>Mensagem consistente com o anúncio ou link que trouxe o visitante.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">Elementos essenciais:</h3>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item"><strong>Título impactante</strong> - Comunica claramente a oferta</li>
+                        <li class="list-group-item"><strong>Subtítulo explicativo</strong> - Complementa o título com detalhes</li>
+                        <li class="list-group-item"><strong>Formulário ou CTA</strong> - Elemento principal de conversão</li>
+                        <li class="list-group-item"><strong>Benefícios claros</strong> - O que o usuário ganha com a oferta</li>
+                        <li class="list-group-item"><strong>Prova social</strong> - Depoimentos, clientes ou métricas</li>
+                        <li class="list-group-item"><strong>Design visual</strong> - Imagens ou vídeos relevantes</li>
+                    </ul>
+                    
+                    <h3 class="mt-5 mb-3">Exemplos de uso:</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-envelope-check text-primary me-2"></i> Captura de leads</h5>
+                                    <p>Coletar emails para newsletter, lista de espera ou contato futuro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-cart-check text-primary me-2"></i> Vendas diretas</h5>
+                                    <p>Venda de produtos, serviços ou assinaturas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-download text-primary me-2"></i> Conteúdo gratuito</h5>
+                                    <p>Download de e-books, whitepapers ou kits.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4">
+                                <div class="card-body">
+                                    <h5><i class="bi bi-calendar-event text-primary me-2"></i> Eventos</h5>
+                                    <p>Inscrição em webinars, workshops ou cursos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Bootstrap -->
+    <section id="bootstrap" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">O que é Bootstrap?</h2>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <i class="bi bi-bootstrap feature-icon me-3"></i>
+                        <div>
+                            <p class="lead">Bootstrap é um <strong>framework front-end</strong> open-source que fornece componentes pré-construídos e ferramentas para criação de interfaces web responsivas com HTML, CSS e JavaScript.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">História e Evolução:</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2011</div>
+                            <h5>Lançamento inicial</h5>
+                            <p>Criado por Mark Otto e Jacob Thornton no Twitter como ferramenta interna chamada Twitter Blueprint.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2012</div>
+                            <h5>Bootstrap 2</h5>
+                            <p>Adoção do design responsivo como padrão e inclusão do sistema de grid de 12 colunas.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2013</div>
+                            <h5>Bootstrap 3</h5>
+                            <p>Redesenho completo com abordagem mobile-first e novo tema flat design.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2018</div>
+                            <h5>Bootstrap 4</h5>
+                            <p>Migração para Sass, flexbox como padrão e componentes remodelados.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021</div>
+                            <h5>Bootstrap 5</h5>
+                            <p>Remoção da dependência do jQuery, novos utilitários CSS e melhorias no sistema de grid.</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">Principais recursos:</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4><i class="bi bi-grid-3x3-gap text-primary me-2"></i> Sistema de Grid</h4>
+                                    <p>Sistema de layout responsivo baseado em 12 colunas que se adapta automaticamente a diferentes tamanhos de tela.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4><i class="bi bi-collection text-primary me-2"></i> Componentes Prontos</h4>
+                                    <p>Biblioteca de elementos UI como navegação, botões, cards, modais e formulários estilizados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4><i class="bi bi-tools text-primary me-2"></i> Utilitários CSS</h4>
+                                    <p>Classes prontas para espaçamento, tipografia, cores, flexbox e outros estilos comuns.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4><i class="bi bi-phone text-primary me-2"></i> Mobile-first</h4>
+                                    <p>Abordagem que prioriza a experiência em dispositivos móveis desde o início do design.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">Vantagens para Landing Pages:</h3>
+                    <div class="comparison-result">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Desenvolvimento rápido:</strong> Crie páginas em horas em vez de dias</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Consistência visual:</strong> Design coeso em todos os componentes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Responsividade automática:</strong> Funciona em todos os dispositivos sem esforço extra</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Compatibilidade:</strong> Testado em todos os navegadores modernos</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Documentação completa:</strong> Exemplos e padrões de uso bem estabelecidos</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Comunidade ativa:</strong> Suporte e recursos abundantes disponíveis</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> <strong>Customizável:</strong> Fácil de personalizar com Sass ou CSS</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="mt-5 mb-3">Quando usar Bootstrap?</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-success">
+                                <div class="card-body">
+                                    <h4 class="text-success"><i class="bi bi-check-circle me-2"></i> Cenários ideais</h4>
+                                    <ul>
+                                        <li>Prototipação rápida</li>
+                                        <li>Projetos com prazos curtos</li>
+                                        <li>Equipes pequenas</li>
+                                        <li>Aplicações internas</li>
+                                        <li>Quando consistência é crucial</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="card h-100 border-warning">
+                                <div class="card-body">
+                                    <h4 class="text-warning"><i class="bi bi-exclamation-circle me-2"></i> Limitações</h4>
+                                    <ul>
+                                        <li>Sites com design altamente customizado</li>
+                                        <li>Quando performance extrema é necessária</li>
+                                        <li>Projetos muito pequenos (1-2 páginas)</li>
+                                        <li>Quando você quer evitar dependências</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparação Bootstrap vs Código Puro -->
+    <section id="comparison" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Bootstrap vs Código Puro</h2>
+                    <p class="text-center mb-5">Veja na prática as diferenças entre desenvolver com Bootstrap e escrever tudo manualmente</p>
+                    
+                    <!-- Navbar Comparison -->
+                    <h3>1. Barra de Navegação Responsiva</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="code-comparison">
+                                <div class="code-header">
+                                    Código Puro (HTML + CSS)
+                                </div>
+                                <div class="code-content">
+                                    <pre><code>&lt;nav class="navbar"&gt;
+  &lt;div class="container"&gt;
+    &lt;a href="#" class="logo"&gt;Minha Marca&lt;/a&gt;
+    &lt;button class="menu-btn"&gt;☰&lt;/button&gt;
+    &lt;ul class="nav-links"&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;style&gt;
+.navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .menu-btn { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+&lt;/style&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="code-comparison">
+                                <div class="code-header">
+                                    Com Bootstrap
+                                </div>
+                                <div class="code-content">
+                                    <pre><code>&lt;nav class="navbar navbar-expand-lg bg-white"&gt;
+  &lt;div class="container"&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Minha Marca&lt;/a&gt;
+    &lt;button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav"&gt;
+      &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="collapse navbar-collapse" id="navbarNav"&gt;
+      &lt;ul class="navbar-nav ms-auto"&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Home&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Sobre&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+          &lt;a class="nav-link" href="#"&gt;Contato&lt;/a&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;!-- Apenas inclua o CSS do Bootstrap --&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-result">
+                        <h5>Análise:</h5>
+                        <p>O Bootstrap oferece:</p>
+                        <ul>
+                            <li><strong>Economia de tempo:</strong> ~70% menos código para o mesmo resultado</li>
+                            <li><strong>Responsividade pronta:</strong> Comportamento mobile sem escrever media queries</li>
+                            <li><strong>Consistência:</strong> Design padronizado com outros componentes</li>
+                            <li><strong>Manutenção:</strong> Atualizações automáticas com novas versões</li>
+                            <li><strong>Ícone de hambúrguer:</strong> Incluído automaticamente</li>
+                            <li><strong>Animações:</strong> Transições suaves sem código adicional</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Grid System Comparison -->
+                    <h3 class="mt-5">2. Sistema de Grid Responsivo</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="code-comparison">
+                                <div class="code-header">
+                                    Código Puro (HTML + CSS)
+                                </div>
+                                <div class="code-content">
+                                    <pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col"&gt;
+      &lt;div class="card"&gt;Produto 1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;div class="card"&gt;Produto 2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col"&gt;
+      &lt;div class="card"&gt;Produto 3&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col {
+  flex: 0 0 100%;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+@media (min-width: 576px) {
+  .col { flex: 0 0 50%; }
+}
+@media (min-width: 992px) {
+  .col { flex: 0 0 33.333%; }
+}
+&lt;/style&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="code-comparison">
+                                <div class="code-header">
+                                    Com Bootstrap
+                                </div>
+                                <div class="code-content">
+                                    <pre><code>&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-sm-6 col-lg-4 mb-4"&gt;
+      &lt;div class="card"&gt;Produto 1&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6 col-lg-4 mb-4"&gt;
+      &lt;div class="card"&gt;Produto 2&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-6 col-lg-4 mb-4"&gt;
+      &lt;div class="card"&gt;Produto 3&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Apenas inclua o CSS do Bootstrap --&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-result">
+                        <h5>Análise:</h5>
+                        <p>Com Bootstrap você ganha:</p>
+                        <ul>
+                            <li><strong>Sistema de 12 colunas:</strong> Flexível e fácil de usar</li>
+                            <li><strong>Breakpoints pré-definidos:</strong> (xs, sm, md, lg, xl) sem escrever media queries</li>
+                            <li><strong>Controle preciso:</strong> Defina layouts diferentes para cada tamanho de tela</li>
+                            <li><strong>Documentação completa:</strong> Exemplos e padrões de uso bem estabelecidos</li>
+                            <li><strong>Gutters consistentes:</strong> Espaçamento uniforme entre colunas</li>
+                            <li><strong>Alinhamento fácil:</strong> Classes para alinhar vertical e horizontalmente</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Button Comparison -->
+                    <h3 class="mt-5">3. Botões Estilizados</h3>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="code-comparison">
+                                <div class="code-header">
+                                    Código Puro (HTML + CSS)
+                                </div>
+                                <div class="code-content">
+                                    <pre><code>&lt;button class="btn"&gt;Padrão&lt;/button&gt;
+&lt;button class="btn-primary"&gt;Primário&lt;/button&gt;
+&lt;button class="btn-outline"&gt;Outline&lt;/button&gt;
+
+&lt;style&gt;
+.btn, .btn-primary, .btn-outline {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 0.5rem;
+}
+.btn {
+  border: 1px solid #dee2e6;
+  background: white;
+  color: #212529;
+}
+.btn-primary {
+  border: 1px solid #0d6efd;
+  background: #0d6efd;
+  color: white;
+}
+.btn-primary:hover {
+  background: #0b5ed7;
+  border-color: #0a58ca;
+}
+.btn-outline {
+  border: 1px solid #0d6efd;
+  background: transparent;
+  color: #0d6efd;
+}
+.btn-outline:hover {
+  background: #0d6efd;
+  color: white;
+}
+&lt;/style&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="code-comparison">
+                                <div class="code-header">
+                                    Com Bootstrap
+                                </div>
+                                <div class="code-content">
+                                    <pre><code>&lt;button class="btn"&gt;Padrão&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Primário&lt;/button&gt;
+&lt;button class="btn btn-outline-primary"&gt;Outline&lt;/button&gt;
+
+&lt;!-- Apenas inclua o CSS do Bootstrap --&gt;</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comparison-result">
+                        <h5>Análise:</h5>
+                        <p>Vantagens do Bootstrap para botões:</p>
+                        <ul>
+                            <li><strong>Variedade de estilos:</strong> Primary, secondary, success, danger, etc.</li>
+                            <li><strong>Tamanhos pré-definidos:</strong> btn-sm, btn-lg para diferentes necessidades</li>
+                            <li><strong>Estado disabled:</strong> Funcionalidade pronta sem CSS adicional</li>
+                            <li><strong>Consistência:</strong> Mesmo visual em todo o projeto</li>
+                            <li><strong>Grupos de botões:</strong> Facilidade para criar grupos alinhados</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boas Práticas -->
+    <section id="best-practices" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Boas Práticas para Landing Pages</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3><i class="bi bi-check-circle text-primary me-2"></i> Melhores Práticas de Design</h3>
+                            <ul class="mt-3">
+                                <li><strong>Hierarquia visual clara:</strong> Use tamanhos de fonte e cores para guiar o olhar do usuário</li>
+                                <li><strong>Contraste adequado:</strong> Garanta que texto seja legível sobre o fundo</li>
+                                <li><strong>Espaçamento generoso:</strong> Evite poluição visual com espaços bem definidos</li>
+                                <li><strong>CTA destacado:</strong> Botão principal deve ser imediatamente visível</li>
+                                <li><strong>Imagens relevantes:</strong> Use imagens que complementem a mensagem</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3><i class="bi bi-lightning-charge text-primary me-2"></i> Otimização para Conversão</h3>
+                            <ul class="mt-3">
+                                <li><strong>Título impactante:</strong> Comunique o valor principal em segundos</li>
+                                <li><strong>Benefícios claros:</strong> Liste o que o usuário ganha, não apenas características</li>
+                                <li><strong>Prova social:</strong> Depoimentos, números de clientes ou selos de confiança</li>
+                                <li><strong>Formulário simples:</strong> Peça apenas informações essenciais</li>
+                                <li><strong>Garantias visíveis:</strong> Reduza o risco percebido pelo usuário</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3><i class="bi bi-speedometer2 text-primary me-2"></i> Performance Técnica</h3>
+                            <ul class="mt-3">
+                                <li><strong>Otimize imagens:</strong> Use formatos modernos como WebP e dimensões adequadas</li>
+                                <li><strong>Minimize CSS/JS:</strong> Remova código não utilizado do Bootstrap</li>
+                                <li><strong>Carregamento lento:</strong> Use lazy-load para imagens abaixo do scroll</li>
+                                <li><strong>Cache adequado:</strong> Configure cabeçalhos HTTP para recursos estáticos</li>
+                                <li><strong>Monitore métricas:</strong> Use Lighthouse ou PageSpeed Insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-body">
+                            <h3><i class="bi bi-phone text-primary me-2"></i> Mobile-first com Bootstrap</h3>
+                            <ul class="mt-3">
+                                <li><strong>Comece pelo mobile:</strong> Projete primeiro para telas pequenas</li>
+                                <li><strong>Use classes responsivas:</strong> col-md-, col-lg- para diferentes breakpoints</li>
+                                <li><strong>Teste em dispositivos reais:</strong> Não confie apenas no emulador</li>
+                                <li><strong>Toque amigável:</strong> Áreas de toque mínimas de 48x48px</li>
+                                <li><strong>Performance mobile:</strong> Reduza animações complexas em dispositivos móveis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">Teste Seu Conhecimento</h2>
+                    <p class="text-center mb-4">Responda as perguntas para verificar seu entendimento sobre landing pages e Bootstrap</p>
+                    
+                    <div class="quiz-card">
+                        <!-- Pergunta 1 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">1. Qual é o principal objetivo de uma landing page?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                                <label class="form-check-label" for="q1a">
+                                    Exibir várias páginas com conteúdos variados
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                                <label class="form-check-label" for="q1b">
+                                    Servir como página inicial de um site
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                                <label class="form-check-label" for="q1c">
+                                    Converter visitantes em leads ou clientes
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 2 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">2. Qual destes NÃO é um elemento essencial de uma landing page eficaz?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                                <label class="form-check-label" for="q2a">
+                                    Título impactante
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                                <label class="form-check-label" for="q2b">
+                                    Menu de navegação completo
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q2" id="q2c" value="c">
+                                <label class="form-check-label" for="q2c">
+                                    Chamada para ação clara
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 3 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">3. Qual foi a principal mudança no Bootstrap 5 em relação às versões anteriores?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                                <label class="form-check-label" for="q3a">
+                                    Remoção da dependência do jQuery
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                                <label class="form-check-label" for="q3b">
+                                    Adição de componentes 3D
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                                <label class="form-check-label" for="q3c">
+                                    Mudança para linguagem Python
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 4 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">4. Qual é a principal vantagem de usar o sistema de grid do Bootstrap?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                                <label class="form-check-label" for="q4a">
+                                    Criação rápida de layouts responsivos sem escrever media queries
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                                <label class="form-check-label" for="q4b">
+                                    Melhor performance que grids CSS puros
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                                <label class="form-check-label" for="q4c">
+                                    Possibilidade de criar animações complexas
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 5 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">5. Qual destes é um benefício do código puro em relação ao Bootstrap?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                                <label class="form-check-label" for="q5a">
+                                    Maior controle e personalização do design
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                                <label class="form-check-label" for="q5b">
+                                    Desenvolvimento mais rápido
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q5" id="q5c" value="c">
+                                <label class="form-check-label" for="q5c">
+                                    Menor curva de aprendizado
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 6 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">6. Qual prática NÃO é recomendada para otimizar landing pages?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                                <label class="form-check-label" for="q6a">
+                                    Formulários longos com muitos campos
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                                <label class="form-check-label" for="q6b">
+                                    Prova social e depoimentos
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                                <label class="form-check-label" for="q6c">
+                                    Chamadas para ação claras e visíveis
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 7 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">7. Qual recurso do Bootstrap ajuda a garantir consistência visual entre navegadores?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                                <label class="form-check-label" for="q7a">
+                                    Normalize.css incluído
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                                <label class="form-check-label" for="q7b">
+                                    Componentes JavaScript
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q7" id="q7c" value="c">
+                                <label class="form-check-label" for="q7c">
+                                    Sistema de ícones
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 8 -->
+                        <div class="mb-4">
+                            <p class="fw-bold">8. Qual abordagem o Bootstrap 5 adota para design responsivo?</p>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                                <label class="form-check-label" for="q8a">
+                                    Mobile-first
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                                <label class="form-check-label" for="q8b">
+                                    Desktop-first
+                                </label>
+                            </div>
+                            <div class="form-check quiz-option">
+                                <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                                <label class="form-check-label" for="q8c">
+                                    Adaptação progressiva
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-primary mt-3" onclick="corrigirQuiz()">Corrigir Quiz</button>
+                        <div id="resultado" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold"><i class="bi bi-layout-text-window-reverse me-2"></i> LandingPro</h5>
+                    <p class="mt-3">Material educativo para palestra sobre desenvolvimento de landing pages com Bootstrap.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2025 LandingPro. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Quiz Script -->
+    <script>
+        function corrigirQuiz() {
+            let acertos = 0;
+            const respostasCorretas = {
+                q1: 'c',
+                q2: 'b',
+                q3: 'a',
+                q4: 'a',
+                q5: 'a',
+                q6: 'a',
+                q7: 'a',
+                q8: 'a'
+            };
+            
+            // Verifica cada pergunta
+            for (let i = 1; i <= 8; i++) {
+                const questao = 'q' + i;
+                const respostaSelecionada = document.querySelector(`input[name="${questao}"]:checked`);
                 
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                if (respostaSelecionada && respostaSelecionada.value === respostasCorretas[questao]) {
+                    acertos++;
+                }
+            }
+            
+            // Exibe o resultado
+            const resultadoDiv = document.getElementById("resultado");
+            let mensagem = '';
+            let classeAlerta = '';
+            
+            if (acertos === 8) {
+                mensagem = 'Excelente! Você acertou todas as 8 perguntas! Dominou completamente o conteúdo.';
+                classeAlerta = 'alert-success';
+            } else if (acertos >= 6) {
+                mensagem = `Muito bom! Você acertou ${acertos} de 8 perguntas. Tem um ótimo entendimento do assunto.`;
+                classeAlerta = 'alert-info';
+            } else if (acertos >= 4) {
+                mensagem = `Bom trabalho! Você acertou ${acertos} de 8 perguntas. Revise os tópicos onde errou para melhorar.`;
+                classeAlerta = 'alert-primary';
+            } else {
+                mensagem = `Você acertou ${acertos} de 8 perguntas. Recomendamos revisar o material e tentar novamente.`;
+                classeAlerta = 'alert-warning';
+            }
+            
+            resultadoDiv.innerHTML = `
+                <div class="alert ${classeAlerta}">
+                    <h4 class="alert-heading">Resultado do Quiz</h4>
+                    <p>${mensagem}</p>
+                    ${acertos < 8 ? '<hr><p class="mb-0">Dica: Volte às seções relevantes para reforçar seus conhecimentos nos tópicos onde teve dificuldade.</p>' : ''}
                 </div>
-              </div>
-              
-              <div class="form-group">
-                <label for="subject">Assunto</label>
-                <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Mensagem</label>
-                <textarea id="message" name="message" rows="5" placeholder="Sua mensagem..." required></textarea>
-              </div>
-              
-              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-                Enviar Mensagem
-              </button>
-              
-              <div id="form-status" class="form-status"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="copyright">&copy; 2024 Cauê Sotero. Todos os direitos reservados.</p>
-      </div>
-    </div>
-  </footer>
-  <!-- Botão Flutuante de WhatsApp -->
-  <a href="https://wa.me/5512991992477?text=Olá,%20gostaria%20de%20um%20orçamento" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.563 4.245 1.632 6.082L0 24l5.918-1.632A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.001c-1.963 0-3.854-.563-5.494-1.632l-.395-.232-3.51.969.97-3.51-.232-.395A9.994 9.994 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.618-5.556c-.305-.152-1.827-.914-2.11-.991-.282-.077-.488.076-.61.229-.123.152-.488.533-.61.647-.122.114-.244.137-.427.038-.183-.1-.777-.305-1.494-.976-.56-.524-.994-1.173-1.116-1.326-.122-.152-.013-.236.091-.334.094-.088.21-.197.305-.296.094-.1.123-.171.183-.286.061-.114.03-.214-.015-.305-.046-.091-.427-.991-.585-1.357-.152-.352-.305-.305-.488-.309-.183-.005-.366-.005-.548-.005-.183 0-.488.061-.744.305-.256.244-.977.847-.977 2.058 0 1.211.891 2.382 1.006 2.55.114.168 1.403 2.166 3.388 3.042.472.208.84.35 1.128.453.47.165.896.208 1.204.126.345-.092 1.067-.427 1.22-.838.152-.411.152-.762.107-.838-.046-.076-.168-.122-.305-.183z"/>
-    </svg>
-  </a>
-
-  <!-- Libraries JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
-  
-  <!-- Custom JS -->
-  <script src="./assets/js/v0.js"></script>
+            `;
+        }
+    </script>
 </body>
 </html>
