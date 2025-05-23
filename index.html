@@ -205,6 +205,15 @@
                         <a class="nav-link" href="#best-practices">Boas Práticas</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#github-guide">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bootstrap-guide">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#template-base">Template</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#quiz">Quiz</a>
                     </li>
                 </ul>
@@ -1012,6 +1021,144 @@
                         
                         <button class="btn btn-primary mt-3" onclick="corrigirQuiz()">Corrigir Quiz</button>
                         <div id="resultado" class="mt-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia GitHub -->
+    <section id="github-guide" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Guia: Como Hospedar no GitHub Pages</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3><i class="bi bi-github text-primary me-2"></i> Passo a Passo</h3>
+                            <ol class="mt-3">
+                                <li class="mb-3">
+                                    <strong>Criar uma conta no GitHub</strong>
+                                    <p>Acesse github.com e crie sua conta gratuita</p>
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Criar um novo repositório</strong>
+                                    <p>Clique em "New repository" e nomeie como "seu-usuario.github.io"</p>
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Fazer upload dos arquivos</strong>
+                                    <p>Arraste seus arquivos HTML, CSS e imagens para o repositório</p>
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Configurar GitHub Pages</strong>
+                                    <p>Vá em Settings > Pages e selecione a branch main</p>
+                                </li>
+                                <li class="mb-3">
+                                    <strong>Verificar o site</strong>
+                                    <p>Acesse seu-usuario.github.io para ver o site online</p>
+                                </li>
+                            </ol>
+                            <a href="Guia-GitHub-Pages.pdf" class="btn btn-primary mt-3" download>
+                                <i class="bi bi-download me-2"></i>Baixar Guia Completo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia Bootstrap -->
+    <section id="bootstrap-guide" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Guia: Personalização do Bootstrap</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3><i class="bi bi-palette text-primary me-2"></i> Customização de Cores</h3>
+                            <div class="code-comparison mb-4">
+                                <div class="code-header">Como mudar as cores</div>
+                                <div class="code-content">
+                                    <pre><code>/* No seu arquivo CSS */
+:root {
+    --bs-primary: #2563eb;    /* Azul */
+    --bs-secondary: #1e40af;  /* Azul Escuro */
+    --bs-success: #22c55e;    /* Verde */
+    --bs-danger: #ef4444;     /* Vermelho */
+    --bs-warning: #f59e0b;    /* Laranja */
+    --bs-info: #3b82f6;       /* Azul Claro */
+}</code></pre>
+                                </div>
+                            </div>
+
+                            <h3><i class="bi bi-arrows-angle-expand text-primary me-2"></i> Espaçamento</h3>
+                            <div class="code-comparison mb-4">
+                                <div class="code-header">Classes de espaçamento</div>
+                                <div class="code-content">
+                                    <pre><code>&lt;div class="m-1"&gt;Margem em todos os lados&lt;/div&gt;
+&lt;div class="p-3"&gt;Padding em todos os lados&lt;/div&gt;
+&lt;div class="mt-4"&gt;Margem superior&lt;/div&gt;
+&lt;div class="mb-2"&gt;Margem inferior&lt;/div&gt;
+&lt;div class="ms-3"&gt;Margem esquerda&lt;/div&gt;
+&lt;div class="me-5"&gt;Margem direita&lt;/div&gt;</code></pre>
+                                </div>
+                            </div>
+
+                            <h3><i class="bi bi-brush text-primary me-2"></i> Customização Avançada</h3>
+                            <ul class="mt-3">
+                                <li>Use o SASS para customização completa</li>
+                                <li>Modifique variáveis do Bootstrap</li>
+                                <li>Crie seus próprios componentes</li>
+                                <li>Personalize breakpoints</li>
+                            </ul>
+                            
+                            <a href="Guia-Bootstrap.pdf" class="btn btn-primary mt-3" download>
+                                <i class="bi bi-download me-2"></i>Baixar Guia Completo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Template Base -->
+    <section id="template-base" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Template Base para Landing Page</h2>
+                    
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3><i class="bi bi-file-earmark-code text-primary me-2"></i> Estrutura Básica</h3>
+                            <p class="lead">Um template limpo e responsivo para começar seu projeto</p>
+                            
+                            <div class="code-comparison mb-4">
+                                <div class="code-header">O que inclui</div>
+                                <div class="code-content">
+                                    <ul>
+                                        <li>Estrutura HTML5 completa</li>
+                                        <li>Bootstrap 5 integrado</li>
+                                        <li>CSS personalizado</li>
+                                        <li>Seções comuns de landing page</li>
+                                        <li>Componentes responsivos</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <i class="bi bi-info-circle me-2"></i>
+                                Este template é perfeito para iniciantes e pode ser facilmente customizado.
+                            </div>
+                            
+                            <a href="template-base.html" class="btn btn-primary mt-3" download>
+                                <i class="bi bi-download me-2"></i>Baixar Template Base
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
