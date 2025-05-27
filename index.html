@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cauê Sotero | Full Stack Developer</title>
+<meta name="description" content="Portfolio of Cauê Sotero, a Full Stack Developer passionate about technology, innovation, and teamwork.">
+<meta name="keywords" content="Cauê Sotero, Full Stack Developer, React, Node.js, PHP, Laravel, AWS">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="./assets/favicon/favicon-16x16.png">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/css/v0.css">
+
+<!-- Libraries CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<style>
+section, .container, , .about-content, .skills-grid, .projects-container, .contact-grid, .education-grid, .certifications-container, .testimonials-container, .achievements-grid {
+display: block !important;
+visibility: visible !important;
+opacity: 1 !important;
+min-height: 100px;
+}
+[data-aos] {
+opacity: 1 !important;
+transform: none !important;
+}
+</style>
+<body>
+<!-- Navbar -->
+<nav id="navbar" class="navbar">
+<div class="container">
+<a href="#" class="logo">CS</a>
+
+<!-- Desktop Navigation -->
+<div class="nav-links">
+<a href="#hero" class="nav-link">Início</a>
+<a href="#about" class="nav-link">Sobre</a>
+<a href="#skills" class="nav-link">Habilidades</a>
+<a href="#projects" class="nav-link">Projetos</a>
+<a href="#contact" class="nav-link">Contato</a>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+<svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" y1="1" x2="12" y2="3"></line>
+<line x1="12" y1="21" x2="12" y2="23"></line>
+<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+<line x1="1" y1="12" x2="3" y2="12"></line>
+<line x1="21" y1="12" x2="23" y2="12"></line>
+<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+</svg>
+<svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+</button>
+
+<a href="CurrÍculo - Cauê.pdf" download class="btn btn-primary">Download CV</a>
+</div>
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<line x1="3" y1="12" x2="21" y2="12"></line>
+<line x1="3" y1="6" x2="21" y2="6"></line>
+<line x1="3" y1="18" x2="21" y2="18"></line>
+</svg>
+</button>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu">
+<div class="container">
+<a href="#hero" class="nav-link">Início</a>
+<a href="#about" class="nav-link">Sobre</a>
+<a href="#skills" class="nav-link">Habilidades</a>
+<a href="#projects" class="nav-link">Projetos</a>
+<a href="#contact" class="nav-link">Contato</a>
+<a href="CurrÍculo - Cauê.pdf" download class="btn btn-primary mobile-btn">Download CV</a>
+</div>
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+<div id="particles-js" class="particles"></div>
+<div class="container">
+<div class="hero-content">
+<h1 class="hero-title">Cauê Sotero</h1>
+<h2 class="hero-subtitle">
+<span id="typed-text"></span>
+</h2>
+<p class="hero-description">
+Transformando ideias em soluções inovadoras com paixão por tecnologia e trabalho em equipe
+</p>
+<div class="hero-buttons">
+<a href="#contact" class="btn btn-primary">Entre em Contato</a>
+<a href="CurrÍculo - Cauê.pdf" download class="btn btn-outline">Download CV</a>
+</div>
+</div>
+<div class="scroll-down">
+<a href="#about">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg>
+</a>
+</div>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about section-padding section-bg">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+
+<div class="about-content">
+<div class="about-image" data-aos="fade-right">
+<div class="card">
+<img src="./assets/image/caue-foto.jpeg" alt="Cauê Sotero" class="img-fluid">
+</div>
+</div>
+
+<div class="about-text" data-aos="fade-left">
+<div class="location">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+<span>Taubaté, São Paulo, Brasil</span>
+</div>
+
+<p>
+Apaixonado por tecnologia, aprendizado contínuo e colaboração. Acredito que grandes resultados surgem do
+trabalho em equipe e da troca de conhecimentos. Sou prestativo, focado e comprometido, sempre buscando
+evoluir e entregar soluções inovadoras em cada projeto.
+</p>
+
+<div class="stats-grid">
+<div class="stat-card">
+<h3>2+</h3>
+<p>Anos de Experiência</p>
+</div>
+
+<div class="stat-card">
+<h3>10+</h3>
+<p>Projetos Concluídos</p>
+</div>
+
+<div class="stat-card">
+<h3>3+</h3>
+<p>Certificações</p>
+</div>
+
+<div class="stat-card">
+<h3>5+</h3>
+<p>Tecnologias Dominadas</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills section-padding">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Habilidades Técnicas</h2>
+
+<div class="skills-grid">
+<!-- Linguagens -->
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+<div class="skill-header">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon blue">
+<polyline points="16 18 22 12 16 6"></polyline>
+<polyline points="8 6 2 12 8 18"></polyline>
+</svg>
+<h3>Linguagens</h3>
+</div>
+
+<div class="skill-items">
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>PHP</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Python</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Java</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>JavaScript</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>TypeScript</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>C++</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>HTML</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon blue">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>CSS</span>
+</div>
+</div>
+</div>
+
+<!-- Frameworks e Bibliotecas -->
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+<div class="skill-header">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon purple">
+<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+<polyline points="2 17 12 22 22 17"></polyline>
+<polyline points="2 12 12 17 22 12"></polyline>
+</svg>
+<h3>Frameworks e Bibliotecas</h3>
+</div>
+
+<div class="skill-items">
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>React</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>React Native</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Node.js</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Express</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon purple">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Laravel</span>
+</div>
+</div>
+</div>
+
+<!-- Banco de Dados -->
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+<div class="skill-header">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon green">
+<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+</svg>
+<h3>Banco de Dados</h3>
+</div>
+
+<div class="skill-items">
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon green">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>MySQL</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon green">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>PostgreSQL</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon green">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>MongoDB</span>
+</div>
+</div>
+</div>
+
+<!-- Infraestrutura -->
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+<div class="skill-header">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon orange">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<h3>Infraestrutura</h3>
+</div>
+
+<div class="skill-items">
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon orange">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>AWS</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon orange">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Docker</span>
+</div>
+</div>
+</div>
+
+<!-- Ferramentas -->
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+<div class="skill-header">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon red">
+<polyline points="4 17 10 11 4 5"></polyline>
+<line x1="12" y1="19" x2="20" y2="19"></line>
+</svg>
+<h3>Ferramentas</h3>
+</div>
+
+<div class="skill-items">
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon red">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Git</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon red">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>GitHub</span>
+</div>
+</div>
+</div>
+
+<!-- Metodologias -->
+<div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+<div class="skill-header">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon indigo">
+<circle cx="12" cy="12" r="10"></circle>
+<polyline points="8 12 12 16 16 12"></polyline>
+<line x1="12" y1="8" x2="12" y2="16"></line>
+</svg>
+<h3>Metodologias</h3>
+</div>
+
+<div class="skill-items">
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon indigo">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>MVC</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon indigo">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Clean Code</span>
+</div>
+
+<div class="skill-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-chip-icon indigo">
+<rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+<rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+<line x1="6" y1="6" x2="6.01" y2="6"></line>
+<line x1="6" y1="18" x2="6.01" y2="18"></line>
+</svg>
+<span>Scrum</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="achievements section-padding section-bg">
+<div class="container">
+<div class="section-header" data-aos="fade-up">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="section-icon yellow">
+<circle cx="12" cy="8" r="7"></circle>
+<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+</svg>
+<h2 class="section-title">Conquistas</h2>
+</div>
+
+<div class="achievements-grid">
+<div class="achievement-card" data-aos="fade-up" data-aos-delay="0">
+<div class="achievement-icon">🥇</div>
+<h3>Top 16 SENAI Projects</h3>
+<p>Selecionado como um dos 16 melhores projetos do SENAI em 2024</p>
+</div>
+
+<div class="achievement-card" data-aos="fade-up" data-aos-delay="150">
+<div class="achievement-icon">🥉</div>
+<h3>Finalista em Eventos</h3>
+<p>Finalista em duas edições em eventos como Dev Experience e Senai para o Mundo</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects section-padding">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Projetos</h2>
+
+<div class="projects-container">
+<!-- Project 1 -->
+<div class="project-card" id="project-1">
+<div class="project-grid">
+<div class="project-image">
+<img src="./assets/image/chatbot2.jpeg" alt="Chatbot para Atendimento SENAI" class="img-fluid">
+<img src="./assets/image/chatbot.jpeg" alt="Chatbot para Atendimento SENAI" class="img-fluid">
+</div>
+
+<div class="project-content">
+<h3 class="project-title">Chatbot para Atendimento SENAI</h3>
+<p class="project-description">
+Sistema de atendimento automatizado via WhatsApp para otimizar a comunicação com clientes de forma prática e eficiente.
+</p>
+
+<div class="project-details">
+<div class="project-technologies">
+<h4>Tecnologias:</h4>
+<div class="badge-container">
+<span class="badge">Node.js</span>
+<span class="badge">Express</span>
+<span class="badge">Socket.IO</span>
+<span class="badge">PHP</span>
+<span class="badge">MySQL</span>
+</div>
+</div>
+
+<div class="project-features">
+<h4>Funcionalidades:</h4>
+<ul>
+<li>Bot no WhatsApp: Respostas automáticas sobre serviços, suporte e documentos</li>
+<li>Atendimento humanizado: Transição para equipe humana quando necessário</li>
+<li>Painel administrativo em PHP + MySQL para gerenciar atendimentos</li>
+<li>Mensagens rápidas pré-definidas</li>
+</ul>
+</div>
+
+<div class="project-impact">
+<h4>Impacto:</h4>
+<ul>
+<li>Atendimento mais rápido e eficiente</li>
+<li>Melhor experiência para usuários e equipe</li>
+<li>Automação sem perder o toque humano</li>
+</ul>
+</div>
+</div>
+
+<div class="project-links">
+<a href="https://github.com/caueeex/ChatBot---Senai" class="btn btn-outline btn-sm">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+GitHub
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Project 2 -->
+<div class="project-card" id="project-2">
+<div class="project-grid">
+<div class="project-image">
+<img src="./assets/image/vann.jpeg" alt="Projeto Vann" class="img-fluid">
+<img src="./assets/image/vann2.jpeg" alt="Projeto Vann" class="img-fluid">
+</div>
+
+<div class="project-content">
+<h3 class="project-title">Projeto Vann</h3>
+<p class="project-description">
+Sistema para monitorar vans escolares em tempo real, proporcionando maior controle para condutores e tranquilidade aos pais.
+</p>
+
+<div class="project-details">
+<div class="project-technologies">
+<h4>Tecnologias:</h4>
+<div class="badge-container">
+<span class="badge">PHP</span>
+<span class="badge">Laravel</span>
+<span class="badge">React Native</span>
+<span class="badge">React</span>
+<span class="badge">Python</span>
+<span class="badge">SQL</span>
+</div>
+</div>
+
+<div class="project-features">
+<h4>Funcionalidades:</h4>
+<ul>
+<li>Monitoramento em tempo real de vans escolares</li>
+<li>Interface para pais e condutores</li>
+<li>Sistema de notificações</li>
+<li>Relatórios detalhados</li>
+</ul>
+</div>
+
+<div class="project-impact">
+<h4>Impacto:</h4>
+<ul>
+<li>Selecionado entre os 16 melhores projetos do SENAI em 2024</li>
+<li>Maior segurança para estudantes</li>
+<li>Tranquilidade para os pais</li>
+</ul>
+</div>
+</div>
+
+<div class="project-links">
+<a href="https://github.com/caueeex/Sistema-Vann" class="btn btn-outline btn-sm">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+GitHub
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education section-padding section-bg">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Formação e Experiência</h2>
+
+<div class="education-grid">
+<div class="education-column" data-aos="fade-right">
+<h3 class="column-title">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="column-icon blue">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+Formação Acadêmica
+</h3>
+
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+</div>
+<div class="timeline-content">
+<h4>Técnico em Desenvolvimento de Sistemas</h4>
+<p class="timeline-institution">SENAI</p>
+<p class="timeline-period">2022 - 2024</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="blue">
+<path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+<path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+</svg>
+</div>
+<div class="timeline-content">
+<h4>Análise e Desenvolvimento de Sistemas</h4>
+<p class="timeline-institution">SENAI</p>
+<p class="timeline-period">2025 - 2026 (Previsto)</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="experience-column" data-aos="fade-left">
+<h3 class="column-title">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="column-icon purple">
+<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+</svg>
+Experiência Profissional
+</h3>
+
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="purple">
+<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+</svg>
+</div>
+<div class="timeline-content">
+<h4>Estagiário em Análise e Desenvolvimento de Sistemas</h4>
+<p class="timeline-institution">SENAI</p>
+<p class="timeline-period">2023 - Presente</p>
+<p class="timeline-description">
+Desenvolvimento de soluções tecnológicas, participação em projetos inovadores e aplicação de metodologias ágeis.
+</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="purple">
+<rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+</svg>
+</div>
+<div class="timeline-content">
+<h4>Líder de Equipe em Projetos</h4>
+<p class="timeline-institution">SENAI</p>
+<p class="timeline-period">2023 - 2024</p>
+<p class="timeline-description">
+Liderança de equipes em projetos complexos, aplicando metodologias ágeis e garantindo entregas de qualidade.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications section-padding">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Certificações</h2>
+
+<div class="certifications-container">
+<div class="certification-card" data-aos="fade-up">
+<div class="certification-icon">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="yellow">
+<circle cx="12" cy="8" r="7"></circle>
+<polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+</svg>
+</div>
+
+<div class="certification-content">
+<h3>AWS Academy Graduate</h3>
+<p class="certification-issuer">AWS Academy Cloud Foundations</p>
+<p class="certification-date">2023</p>
+</div>
+
+<a href="https://www.credly.com/badges/fc19ef4f-4d1f-4c62-a924-f014e4877d27/linked_in_profile" class="btn btn-outline btn-sm">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+<polyline points="15 3 21 3 21 9"></polyline>
+<line x1="10" y1="14" x2="21" y2="3"></line>
+</svg>
+Ver Certificado
+</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section-padding section-bg">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Depoimentos</h2>
+
+<div class="testimonials-container" data-aos="fade-up">
+<div class="testimonial-card" id="testimonial-slider">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="testimonial-quote blue">
+<path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
+<path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+</svg>
+
+<div class="testimonial-content">
+<div class="testimonial-slides">
+<div class="testimonial-slide active">
+<p class="testimonial-text">"Recomendo fortemente o Cauê Sotero para equipes que buscam um profissional dedicado, com excelente comunicação e comprometimento na entrega de soluções de qualidade."</p>
+<div class="testimonial-author">
+<h4>Professor Wilber</h4>
+<p>Professor SENAI</p>
+</div>
+</div>
+
+<div class="testimonial-slide">
+<p class="testimonial-text">"Cauê sempre se destacou pelo trabalho em equipe e pela capacidade de inovar. Foi um ótimo aluno e colaborador, sempre buscando aprender e aplicar novos conhecimentos."</p>
+<div class="testimonial-author">
+<h4>Professor Luís Felipe Cardoso</h4>
+<p>Professor SENAI</p>
+</div>
+</div>
+
+<div class="testimonial-slide">
+<p class="testimonial-text">"Tive o prazer de orientar Cauê durante o curso Técnico em Desenvolvimento de Sistemas. Sua proatividade, envolvimento e busca por inovação o destacam como um profissional excepcional."</p>
+<div class="testimonial-author">
+<h4>Professor Reuel Adimar Lopes</h4>
+<p>Professor SENAI</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="testimonial-controls">
+<button class="testimonial-prev">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="15 18 9 12 15 6"></polyline>
+</svg>
+</button>
+
+<div class="testimonial-dots">
+<button class="testimonial-dot active" data-index="0"></button>
+<button class="testimonial-dot" data-index="1"></button>
+<button class="testimonial-dot" data-index="2"></button>
+</div>
+
+<button class="testimonial-next">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="9 18 15 12 9 6"></polyline>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact section-padding">
+<div class="container">
+<h2 class="section-title" data-aos="fade-up">Contato</h2>
+
+<div class="contact-grid">
+<div class="contact-info" data-aos="fade-right">
+<div class="card">
+<h3 class="card-title">Informações de Contato</h3>
+
+<div class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
+<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+<polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+<div>
+<h4>Email</h4>
+<p>devcauesotero@gmail.com</p>
+</div>
+</div>
+
+<div class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
+<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+</svg>
+<div>
+<h4>Telefone</h4>
+<p>(12) 99199-2477</p>
+</div>
+</div>
+
+<div class="contact-item">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
+stroke-linecap="round" stroke-linejoin="round" class="contact-icon blue">
+<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+<div>
+<h4>Localização</h4>
+<p>Taubaté, São Paulo, Brasil</p>
+</div>
+</div>
+
+<div class="social-links">
+<h4>Redes Sociais</h4>
+<div class="social-buttons">
+<a href="https://github.com/caueeex" target="_blank" rel="noopener noreferrer" class="social-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/devsotero/" target="_blank" rel="noopener noreferrer" class="social-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+<rect x="2" y="9" width="4" height="12"></rect>
+<circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="contact-form" data-aos="fade-left">
+<div class="card">
+<h3 class="card-title">Envie uma Mensagem</h3>
+
+<form id="contact-form">
+<div class="form-grid">
+<div class="form-group">
+<label for="name">Nome</label>
+<input type="text" id="name" name="name" placeholder="Seu nome" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+</div>
+</div>
+
+<div class="form-group">
+<label for="subject">Assunto</label>
+<input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required>
+</div>
+
+<div class="form-group">
+<label for="message">Mensagem</label>
+<textarea id="message" name="message" rows="5" placeholder="Sua mensagem..." required></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<line x1="22" y1="2" x2="11" y2="13"></line>
+<polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+</svg>
+Enviar Mensagem
+</button>
+
+<div id="form-status" class="form-status"></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="footer-content">
+<p class="copyright">&copy; 2024 Cauê Sotero. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+<!-- Botão Flutuante de WhatsApp -->
+<a href="https://wa.me/5512991992477?text=Olá,%20gostaria%20de%20um%20orçamento" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+<path d="M12 0C5.373 0 0 5.373 0 12c0 2.134.563 4.245 1.632 6.082L0 24l5.918-1.632A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.001c-1.963 0-3.854-.563-5.494-1.632l-.395-.232-3.51.969.97-3.51-.232-.395A9.994 9.994 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.618-5.556c-.305-.152-1.827-.914-2.11-.991-.282-.077-.488.076-.61.229-.123.152-.488.533-.61.647-.122.114-.244.137-.427.038-.183-.1-.777-.305-1.494-.976-.56-.524-.994-1.173-1.116-1.326-.122-.152-.013-.236.091-.334.094-.088.21-.197.305-.296.094-.1.123-.171.183-.286.061-.114.03-.214-.015-.305-.046-.091-.427-.991-.585-1.357-.152-.352-.305-.305-.488-.309-.183-.005-.366-.005-.548-.005-.183 0-.488.061-.744.305-.256.244-.977.847-.977 2.058 0 1.211.891 2.382 1.006 2.55.114.168 1.403 2.166 3.388 3.042.472.208.84.35 1.128.453.47.165.896.208 1.204.126.345-.092 1.067-.427 1.22-.838.152-.411.152-.762.107-.838-.046-.076-.168-.122-.305-.183z"/>
+</svg>
+</a>
+
+<!-- Libraries JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.11.4/dist/ScrollTrigger.min.js"></script>
+
+<!-- Custom JS -->
+<script src="./assets/js/v0.js"></script>
+</body>
+</html>
